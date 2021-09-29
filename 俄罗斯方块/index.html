@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>俄罗斯方块</title>
+	<style>
+
+		#root {
+			display: flex;
+			justify-content: center;
+		}
+
+		#panel {
+			background: #000;
+			position: relative;
+		}
+		#panel #msg{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(255, 255, 255, .3);
+			z-index: 999;
+			display: none;
+		}
+		#panel #msg p{
+			margin: 0;
+			color: red;
+			font-size: 2em;
+			text-align: center;
+			margin-top: 50%;
+			transform: translateY(-50%);
+		}
+
+		#next {
+			position: relative;
+		}
+
+		#scope {
+			margin-left: 2em;
+			color: red;
+		}
+
+		#rule {
+			margin-left: 2em;
+			margin-top: 20px;
+		}
+
+		#rule p {
+			text-indent: 2em;
+		}
+		#rule p span{
+			color: #f40;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="root">
+		<div id="panel">
+
+			<div id="msg">
+				<p></p>
+			</div>
+
+		</div>
+		<div id="tip">
+			<div id="next"></div>
+			<div id="scope"></div>
+			<div id="rule">
+				游戏规则：
+				<p><span>Enter</span> 开始游戏</p>
+				<p><span>Space</span> 暂停/恢复</p>
+				<p>1. 使用 <span>a</span> 进行向左移动</p>
+				<p>2. 使用 <span>d</span> 进行向右移动</p>
+				<p>3. 使用 <span>w</span> 进行方块旋转</p>
+				<p>4. 使用 <span>s</span> 快速移动到底部</p>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="script/bundle00fb6.js"></script></body>
+
+</html>
